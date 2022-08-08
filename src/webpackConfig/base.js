@@ -12,11 +12,22 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8 * 1024 // 8kb => base64
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 options: {
                     presets: [
-                        '@babel/preser-env'
+                        '@babel/preset-env'
                     ]
                 }
             },
@@ -26,7 +37,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['vue-style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
