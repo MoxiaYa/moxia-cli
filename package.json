@@ -1,0 +1,40 @@
+{
+  "name": "moxia-cli",
+  "version": "1.0.0",
+  "description": "moxia-cli",
+  "main": "index.js",
+  "bin": {
+    "moxia": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoxiaYa/moxia-cli.git"
+  },
+  "keywords": [
+    "webpack",
+    "cli"
+  ],
+  "author": "zhangmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoxiaYa/moxia-cli/issues"
+  },
+  "homepage": "https://github.com/MoxiaYa/moxia-cli#readme",
+  "dependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "chalk": "^4.0.1",
+    "commander": "^9.4.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "inquirer": "^9.1.0",
+    "vue-loader": "^17.0.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
